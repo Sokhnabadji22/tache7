@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* -----------------------------------------------------
+                        header
+----------------------------------------------------- */
+
+
+header .haut{
+display: flex;
+justify-content: space-around;
+width: 100%;
+padding: 20px ;
+font-size: 10px;
+background: black;
+color: white;
+height: 30px;
+
+} 
+
+header .haut .gauche{
+width: 60%;
+text-align: center;
+}
+
+header .haut .droite{
+width: 40%;
+display: flex;
+justify-content: space-around;
+}
+
+header .haut .droite a{
+text-decoration: none;
+color: white;
+cursor: pointer;
+}
+header .haut .droite a:hover{
+color: orangered;
+}
+
+header .bas {
+width: 100%;
+display: flex;
+justify-content: space-around;
+position: relative;
+}
+
+header .bas .image{
+    height: 115px;
+    width: 130px;
+    position: absolute;
+    bottom: 2px;
+    left: 50px;
+}
+
+header .bas .image img{ 
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+header .bas nav{
+width: 60%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 30px;
+
+}
+header .bas nav a{
+text-decoration: none;
+color: black;
+cursor: pointer; 
+}
+header .bas nav a:hover{ 
+    color: #FFA600; 
+}
+
+header .bas .icone{
+width: 30%;
+display: flex;
+gap: 25px;
+justify-content: center; 
+align-items: center;
+padding: 30px;
+}
+header .bas .icone i{
+font-size: 25px;
+cursor: pointer;
+}
+header .bas .icone .achat{
+display: flex ;
+}
+header .bas .icone .achat p{ 
+color: white;
+background: orangered;
+width: 15px;
+height: 15px; 
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+/* fin du header */
+
+.sec1{
+    background-image: url(images/chaussure.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.sec1 .conteneur1{
+  text-align: center;
+  padding: 30px;
+}
+
+.sec1 .conteneur1 .image1{
+    width: 5%;
+    margin: 70px auto;
+    border-bottom: 3px solid orangered;
+
+}
+.sec1 .conteneur1 .image1 img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+    
+   
+}
+
+.sec1 .conteneur1 .class-fille1{
+    color: white;
+    margin-top: 10%;
+}
+
+.sec1 .conteneur1 .class-fille1 h1{
+    font-size: 70px;
+}
+
+.sec1 .conteneur1 .class-fille1 p{
+    margin-top: 20px;
+    color: rgb(204, 194, 194);
+}
+
+
+.sec1 .conteneur1 .class-fille1 button{
+    background-color: transparent;
+    padding: 20px;
+    color: white;
+    border: 1px solid;
+    margin-top: 20px;
+}
+                                    /* fin section1 */
+
+.sec2{
+    background-color:rgb(244,244,244);
+    height:400px; 
+    width: 100%;
+} 
+
+.sec2 .conteneur2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+   
+}
+
+.sec2 .conteneur2 .photo1{
+    background-image: url(images/montre.jpg);
+    background-size:cover ;
+    width: 30%;
+    height: 300px;  
+}
+
+
+.sec2 .conteneur2 .photo2{
+    background-image: url(images/basker.jpg);
+    background-size:cover ;
+    width: 30%;
+    height: 300px;  
+}
+
+
+.sec2 .conteneur2 fieldset{
+    width: 80%;
+    height: 75%;
+    margin: 10px 30px;
+    color: white;
+    border: 2px solid white;
+}
+
+.sec2 .conteneur2 fieldset legend{
+    margin-left: -20px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.sec2 .conteneur2 .class-p1{
+    color: white;
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+    padding: 10px;
+   
+}
+
+.sec2 .conteneur2 .class-p2{
+    color: white;
+    margin-left: 30px;
+    padding: 10px;
+   
+}
+
+.sec2 h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:1000px) {
+    header .haut{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 30px;
+        } 
+
+        header .haut .gauche{
+            width: 100%; 
+         }
+
+        
+        header .haut .droite{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            }
+        
+
+            header .bas {
+            flex-direction: column;
+            }
+        
+            header .bas .image{
+            display: none;
+            }
+
+        header .bas nav{
+            width: 100%;
+            display: flex;
+            font-weight: bold;
+            
+            }
+
+            header .bas .icone{
+                width: 100%;
+            }
+
+            .sec1{
+                height:100%;
+            }
+
+            .sec1 .conteneur1 .image1{
+            width: 50%;
+            }
+
+            .sec1 .conteneur1 .class-fille1 h1{
+                font-size: 20px;
+            }
+
+            
+            .sec2{
+             height:100%; 
+            }
+
+            .sec2 .conteneur2{
+                flex-direction: column;
+                top: 0px;  
+            }
+
+            .sec2 .conteneur2 .photo1{
+                width: 100%;
+                height: 300px;  
+            }
+            
+            
+            .sec2 .conteneur2 .photo2{
+                width: 100%;
+                height: 300px;  
+            }
+}
